@@ -1,15 +1,18 @@
 "use client"
 
+import logo from '@/public/ALB Renovations.svg'
+import logoColor from '@/public/alb_renovations_black.svg'
+
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useMobile } from "@/hooks/use-mobile"
+import Image from 'next/image'
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
 ]
 
@@ -45,13 +48,18 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-white">
-              Brand
+            {isScrolled ? (
+              <Image src={logoColor} alt="ALB Renovation" width={200} height={50} />
+            ) : (
+
+              <Image src={logo} alt="ALB Renovation" width={200} height={50} />
+            )}
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-4">
+            <div className="ml-10 flex items-center space-x-4 text-xl">
             {isScrolled ? (
                (links.map(({href, label})=> (
                 <Link key={href} href={href} className="text-foreground hover:text-primary px-3 py-2 rounded-md font-medium">
@@ -65,9 +73,6 @@ export default function Navbar() {
                     </Link>
                  ))
                 ))}
-              <Button variant="default" size="sm">
-                Get Started
-              </Button>
             </div>
           </div>
 

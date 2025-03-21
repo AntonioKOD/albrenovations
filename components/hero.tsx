@@ -62,7 +62,7 @@ export default function HeroSection() {
             </p>
             <div ref={buttonRef} className="flex flex-col sm:flex-row gap-4">
               <Link href="/#contact">
-                <Button />
+                <Button/>
               </Link>
             </div>
           </div>

@@ -2,9 +2,10 @@
 
 import { useEffect, useRef } from "react"
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Linkedin, ArrowUp } from "lucide-react"
+import { ArrowUp } from "lucide-react"
 import gsap from "gsap"
 
+import Card from "./social-icons"
 export default function Footer() {
   const footerRef = useRef<HTMLDivElement>(null)
 
@@ -28,23 +29,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">REMODELX</h3>
+            <h3 className="text-2xl font-bold mb-4">ALB RENOVATION</h3>
             <p className="text-muted-foreground mb-6">
               Transforming houses into dream homes with expert craftsmanship and innovative design.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors duration-300">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors duration-300">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors duration-300">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors duration-300">
-                <Linkedin size={20} />
-              </a>
+            <div className=" -mt-6 -mx-8">
+            <Card/>
             </div>
           </div>
 
@@ -124,7 +114,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} REMODELX. All rights reserved.
+            &copy; {new Date().getFullYear()} ALB RENOVATION. All rights reserved.
           </p>
           <div className="flex items-center">
             <button
