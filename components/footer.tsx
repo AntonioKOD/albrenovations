@@ -4,8 +4,10 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { ArrowUp } from "lucide-react"
 import gsap from "gsap"
+import logo from '@/public/logo_construction.svg'
 
 import Card from "./social-icons"
+import Image from "next/image"
 export default function Footer() {
   const footerRef = useRef<HTMLDivElement>(null)
 
@@ -29,7 +31,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">ALB RENOVATION</h3>
+            <Image src={logo} alt="Construct Concepts" width={200} height={40} className="-mt-12"/>
             <p className="text-muted-foreground mb-6">
               Transforming houses into dream homes with expert craftsmanship and innovative design.
             </p>

@@ -5,6 +5,7 @@ import Button from "@/components/new-button"
 import Link from "next/link"
 import gsap from "gsap"
 
+
 export default function HeroSection() {
   const headingRef = useRef(null)
   const paragraphRef = useRef(null)
@@ -54,8 +55,8 @@ export default function HeroSection() {
       <div className="relative h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="max-w-2xl">
-            <h1 ref={headingRef} className="text-8xl md:text-8xl lg:text-8xl font-bold text-white mb-6">
-              Bring Your Vision Home.
+            <h1 ref={headingRef} className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6">
+             Bring Your Vision Home
             </h1>
             <p ref={paragraphRef} className="text-xl text-white/90 mb-8">
               Expertly crafted remodels that enhance comfort, elevate style, and add lasting value to your space.

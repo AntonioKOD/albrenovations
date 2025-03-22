@@ -1,7 +1,8 @@
 "use client"
 
-import logo from '@/public/ALB Renovations.svg'
-import logoColor from '@/public/alb_renovations_black.svg'
+import logo from '@/public/logo_construction.svg'
+
+
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
@@ -14,6 +15,8 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+  { href: "/services", label: "Services" },
+  { href: "/projects", label: "Projects" },
 ]
 
 
@@ -49,10 +52,10 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-white">
             {isScrolled ? (
-              <Image src={logoColor} alt="ALB Renovation" width={200} height={50} />
+              <Image src={logo} alt="ALB Renovation" width={130} height={40} />
             ) : (
 
-              <Image src={logo} alt="ALB Renovation" width={200} height={50} />
+              <Image src={logo} alt="ALB Renovation" width={130} height={40} />
             )}
             </Link>
           </div>
@@ -79,7 +82,7 @@ export default function Navbar() {
           {/* Mobile Navigation Toggle */}
           <div className="md:hidden">
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-              <Menu className="h-6 w-6" />
+              <Menu size={48} className='text-white' />
             </Button>
           </div>
         </div>
