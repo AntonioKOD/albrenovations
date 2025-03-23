@@ -113,10 +113,11 @@ export default function About(){
 
             {/* Contact Info Section */}
             <div className='p-8 sm:p-12 max-w-7xl mx-auto'>
-              <div className=' mt-4 p-4 sm:p-8 bg-white rounded-lg shadow-lg'>
+              <div className=' mt-4 p-4 sm:p-8 bg-white rounded-lg shadow-lg '>
                 <div className=' flex gap-6'>
-                <h2 className='text-6xl font-bold text-left mt-4'>EXCELLENCE  CREATIVITY  PRECISION</h2>
-                <p className='text-lg gap-5'>Our reputation is founded on innovative ideas combined with meticulous attention to detail. Every project begins with your vision—we collaborate closely with you to design and construct customized environments that tell your unique story,<span className='font-bold'>one detail at a time.</span></p>
+                <h2 className='text-6xl lg:text-6xl md:text-4xl sm:text-2xl font-bold text-left mt-4'>EXCELLENCE  CREATIVITY  PRECISION</h2>
+               
+                <p className='lg:text-lg gap-5 md:text-sm sm:text-sm'>Our reputation is founded on innovative ideas combined with meticulous attention to detail. Every project begins with your vision—we collaborate closely with you to design and construct customized environments that tell your unique story,<span className='font-bold'>one detail at a time.</span></p>
                 </div>
               </div>
 
