@@ -66,7 +66,8 @@ export default function ContactPage(){
             <Phone className="text-primary mr-4 mt-1" />
             <div>
               <h4 className="font-semibold text-lg">Phone</h4>
-              <p className="text-gray-600">(123) 456-7890</p>
+              <p className="text-gray-600">(781) 228-3378</p>
+              <p className='text-gray-400'>(781) 964-3649</p>
             </div>
           </div>
 
@@ -81,11 +82,11 @@ export default function ContactPage(){
           <div className="flex items-start">
             <MapPin className="text-primary mr-4 mt-1" />
             <div>
-              <h4 className="font-semibold text-lg">Office</h4>
+              <h4 className="font-semibold text-lg">Address</h4>
               <p className="text-gray-600">
-                123 Business Street
+                344 Broad Street
                 <br />
-                City, State 12345
+                Weymouth, MA 02188
               </p>
             </div>
           </div>

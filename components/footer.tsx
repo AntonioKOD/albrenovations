@@ -98,14 +98,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <address className="not-italic text-muted-foreground">
-              123 Renovation Street
+              344 Broad Street,
               <br />
-              Suite 456
-              <br />
-              Design City, DC 78901
+              Weymouth, MA 02188
             </address>
             <p className="mt-4 text-muted-foreground">
-              <strong>Phone:</strong> (123) 456-7890
+              <strong>Phone:</strong> (781) 228-3378
             </p>
             <p className="text-muted-foreground">
               <strong>Email:</strong> info@remodelx.com
