@@ -5,6 +5,12 @@ import {ReactNode, useEffect, useRef} from 'react'
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { FaHome, FaBuilding, FaCity } from 'react-icons/fa'
+import firstRemodel from '@/public/construction images/IMG_9989.jpg'
+import secondRemodel from '@/public/construction images/IMG_9990.jpg'
+import remodelPic from '@/public/construction images/IMG_0234.jpeg'
+import remodelPic2 from '@/public/construction images/IMG_0249.jpeg'
+import outsideRemodel from '@/public/construction images/IMG_1120.jpeg'
+import outsideRemodel2 from '@/public/construction images/final.jpg'
 
 const projects: {
   title: string;
@@ -12,50 +18,66 @@ const projects: {
   content: string;
   icon: ReactNode;
   imagePosition: 'left' | 'right';
-  image: {
+  firstImage: {
     src: string;
     alt: string;
   };
+secondImage: {
+     src: string;
+    alt: string;
+};
 }[] = [
     {
-      title: "Modern Oasis",
-      description: "A sleek, contemporary residence with open spaces and smart design.",
+      title: "Modern Bathroom Update",
+      description: "A sleek, contemporary bathroom remodel that maximizes space and functionality.",
       content:
-        "This project showcases innovative architecture with an emphasis on clean lines and natural light. Our Modern Oasis is designed for comfort and sustainability, offering a perfect retreat from the everyday.",
+        "This remodel focuses on a clean, functional design. The space is refreshed with neutral colors, updated fixtures, and easy-to-clean tile flooring. A new vanity with practical storage helps keep everyday items organized, while improved lighting makes the space feel bright and efficient.",
       icon: <FaHome size={24} />,
       imagePosition: "left",
-      image: {
-        src: "https://source.unsplash.com/800x600/?modern-house",
-        alt: "Modern House",
+      firstImage: {
+        src: secondRemodel.src,
+        alt: "Previous Bathroom",
       },
+        secondImage: {
+            src: firstRemodel.src,
+            alt: "Modern Bathroom Interior",
+        },
     },
     {
-      title: "Classic Elegance",
-      description: "Timeless architecture blending tradition with modern flair.",
+      title: "Practical Traditional Bathroom Refresh",
+      description: "A classic bathroom update that emphasizes simplicity and functionality.",
       content:
-        "Classic Elegance reflects a refined balance of historical design and contemporary sophistication. Every detail is meticulously crafted to offer a luxurious living experience.",
+        "Designed for everyday use, this update features new plumbing fixtures, a basic tiled floor, and a refreshed wall color palette. A modern sink and mirror set the tone for a neat, organized space that emphasizes simplicity and functionality, making it ideal for daily routines.",
       icon: <FaBuilding size={24} />,
       imagePosition: "right",
-      image: {
-        src: "https://source.unsplash.com/800x600/?classic-house",
+      firstImage: {
+        src: remodelPic2.src,
         alt: "Classic House",
       },
+        secondImage: {
+            src: remodelPic.src,
+            alt: "Classic House Interior",
+        },
     },
     {
-      title: "Urban Retreat",
-      description: "A sophisticated urban home that balances vibrant city life with tranquility.",
+      title: "Straightforward Building Project",
+      description: "A no-frills building project that focuses on practicality and efficiency.",
       content:
-        "Urban Retreat is designed for those who crave a peaceful sanctuary amidst the urban hustle. Innovative layouts and bespoke finishes create an ideal environment for modern city living.",
+        "This building project adopts a no-frills, functional design. The structure features a simple facade with large windows to allow natural light, modest materials that ensure durability, and a layout designed for practicality. The result is a clean, efficient space that meets everyday needs without unnecessary embellishments.",
       icon: <FaCity size={24} />,
       imagePosition: "left",
-      image: {
-        src: "https://source.unsplash.com/800x600/?urban-house",
+      firstImage: {
+        src: outsideRemodel2.src,
         alt: "Urban House",
       },
+      secondImage: {
+        src: outsideRemodel.src,
+        alt: "Urban House Interior",
+      }
     },
   ];
 
-export default function About(){
+export default function Project(){
     const headingRef = useRef(null)
     const paragraphRef = useRef(null)
     const buttonRef = useRef(null)
@@ -140,7 +162,8 @@ export default function About(){
                     content={project.content}
                     icon={project.icon}
                     imagePosition={project.imagePosition as 'left' | 'right'}
-                    image={project.image}
+                    firstImage={project.firstImage}
+                    secondImage={project.secondImage}
                     />
                 ))}
             </div>

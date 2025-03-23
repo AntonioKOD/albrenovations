@@ -6,10 +6,14 @@ interface ProjectProps {
     title: string,
     description: string,
     content: string,
-    icon: ReactNode
-    imagePosition: 'left' | 'right'
-    image: {
-        src: string,
+    icon: ReactNode,
+    imagePosition: 'left' | 'right',
+    firstImage: {
+        src: string
+        alt: string
+    },
+    secondImage: {
+        src: string
         alt: string
     }
 }
@@ -20,12 +24,13 @@ export default function ProjectSection({
     content,
     icon,
     imagePosition,
-    image
+    firstImage,
+    secondImage
 }: ProjectProps) {
     const textContent = (
         <div className='space-y-6'>
             <div className='flex items-center gap-4'>
-                <div className='bg-orange-100 p-4 rounded-md'>
+                <div className='bg-primary/30 p-4 rounded-md'>
                     {icon}
                 </div>
                 <h3 className='text-3xl font-bold'>{title}</h3>
@@ -37,12 +42,12 @@ export default function ProjectSection({
     const imageContent = (
         <ImageComparison className='aspect-16/10 w-full rounded-lg border border-zinc-200'>
             <ImageComparisonImage
-                src={image.src}
-                alt={image.alt}
+                src={firstImage.src}
+                alt={firstImage.alt}
                 position='left'/>
             <ImageComparisonImage
-            src={image.src}
-            alt={image.alt}
+            src={secondImage.src}
+            alt={secondImage.alt}
             position='right'/>
             <ImageComparisonSlider className='w-2 bg-white/50 backdrop-blur-xs transition-colors hover:bg-white/80'>
                 <div className='bg-primary w-1/2 h-full rounded-lg'></div>
@@ -56,7 +61,7 @@ export default function ProjectSection({
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     {imagePosition === 'left' ? (
                         <>
-                            <div className='hidden md:block'>
+                            <div className=' md:block'>
                                 {imageContent}
                             </div>
                             <div>
@@ -68,7 +73,7 @@ export default function ProjectSection({
                             <div>
                                 {textContent}
                             </div>
-                            <div className='hidden md:block'>
+                            <div className=' md:block'>
                                 {imageContent}
                             </div>
                         </>

@@ -97,7 +97,7 @@ const StyledWrapper = styled.div`
 
   .fancy:hover {
    color: white;
-   background: black;
+   background: #1F3A93;
   }
 
   .fancy:hover::before {

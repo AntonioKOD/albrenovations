@@ -5,8 +5,12 @@ import gsap from 'gsap';
 import { TextRoll } from '@/components/motion-primitives/text-roll';
 import {Card, CardTitle} from '@/components/ui/card';
 import Image from 'next/image';
-import Link from 'next/link';
 import Button from '@/components/contact-button';
+import bathroomRenovation from '@/public/construction images/AC375BE1-F024-4516-A9CB-5D3E20443E70.jpeg'
+import kitchenRemodeling from '@/public/construction images/kitchen.jpg'
+import fullHomeRemodeling from '@/public/construction images/IMG_2031.jpeg'
+import interiorDesign from '@/public/construction images/70078350037__D6892A99-3119-448C-9B1A-7F9883D801E0.jpeg'
+import structuralImprovements from '@/public/construction images/IMG_0336.jpeg'
 
 
 
@@ -18,26 +22,26 @@ const services = [
       
       title: "Full Home Renovation",
       description: "Complete transformation of your living space with custom designs and quality craftsmanship.",
-      image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      image: fullHomeRemodeling
     },
     {
       
       title: "Kitchen Remodeling",
       description: "Modern kitchen designs with premium materials and efficient layouts for the heart of your home.",
-      image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      image: kitchenRemodeling
     },
     {
    
       title: "Bathroom Renovation",
       description: "Luxurious bathroom upgrades with stylish fixtures, custom tiling, and elegant finishes.",
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      image: bathroomRenovation
     },
     {
       
       title: "Interior Design",
       description:
         "Professional interior design services to create cohesive, beautiful spaces that reflect your style.",
-        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        image: interiorDesign
     },
     {
       
@@ -49,7 +53,7 @@ const services = [
       
       title: "Structural Improvements",
       description: "Expert structural modifications to improve flow, functionality, and value of your property.",
-      image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      image: structuralImprovements
     },
   ]
 export default function ServicesPage(){
@@ -189,7 +193,7 @@ export default function ServicesPage(){
   </div>
 </div>
                 <div className='flex justify-center mt-12'>
-            <Link href={'/contac'}><Button/></Link>
+            <Button/>
             </div>
                 </div>
             </div>
