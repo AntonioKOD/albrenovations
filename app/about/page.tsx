@@ -4,6 +4,7 @@ import {useEffect, useRef} from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Button from '@/components/contact-button'
 import headImage from '@/public/construction images/IMG_4311.jpeg'
+import Head from 'next/head'
 
 const principles = [
     {
@@ -87,6 +88,30 @@ export default function About(){
     }, [])
 
     return (
+        <>
+        <Head>
+        <title>About Us – Construct Concepts</title>
+        <meta
+          name="description"
+          content="Learn about Construct Concepts, our passion for design, our commitment to craftsmanship, and our core values that drive every custom home project."
+        />
+        <link rel="canonical" href="https://constructconcepts.com/about" />
+        {/* Open Graph */}
+        <meta property="og:title" content="About Us – Construct Concepts" />
+        <meta
+          property="og:description"
+          content="Discover our journey, our team, and our dedication to building custom homes that reflect your unique story."
+        />
+        <meta property="og:url" content="https://constructconcepts.com/about" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us – Construct Concepts" />
+        <meta
+          name="twitter:description"
+          content="Discover our journey, our team, and our dedication to building custom homes that reflect your unique story."
+        />
+      </Head>
         <div className='w-full'>
             {/* Hero Section */}
             <div ref={sectionRef} className='relative h-screen w-full'>
@@ -163,5 +188,6 @@ export default function About(){
         
 
         </div>
+        </>
     )
 }

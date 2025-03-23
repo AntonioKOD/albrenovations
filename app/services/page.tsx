@@ -12,6 +12,7 @@ import fullHomeRemodeling from '@/public/construction images/IMG_2031.jpeg'
 import interiorDesign from '@/public/construction images/70078350037__D6892A99-3119-448C-9B1A-7F9883D801E0.jpeg'
 import structuralImprovements from '@/public/construction images/IMG_0336.jpeg'
 import headImage from '@/public/construction images/IMG_3032.jpeg'
+import Head from 'next/head';
 
 
 
@@ -81,6 +82,30 @@ export default function ServicesPage(){
     }, [])
 
     return(
+        <>
+        <Head>
+        <title>Our Services – Construct Concepts</title>
+        <meta
+          name="description"
+          content="Explore the range of services at Construct Concepts, from custom home design to full-scale construction, tailored to bring your vision to life."
+        />
+        <link rel="canonical" href="https://constructconcepts.com/services" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Our Services – Construct Concepts" />
+        <meta
+          property="og:description"
+          content="From design to construction, our services are designed to build custom homes that exceed expectations."
+        />
+        <meta property="og:url" content="https://constructconcepts.com/services" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Services – Construct Concepts" />
+        <meta
+          name="twitter:description"
+          content="From design to construction, our services are designed to build custom homes that exceed expectations."
+        />
+      </Head>
         <div className="w-full">
             <div ref={sectionRef} className="relative h-screen w-full">
                 <div className='absolute inset-0 bg-cover bg-center bg-no-repeat'
@@ -199,6 +224,7 @@ export default function ServicesPage(){
                 </div>
             </div>
         </div>
+        </>
     )
 
 }

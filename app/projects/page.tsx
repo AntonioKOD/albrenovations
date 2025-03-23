@@ -12,6 +12,7 @@ import remodelPic2 from '@/public/construction images/IMG_0249.jpeg'
 import outsideRemodel from '@/public/construction images/IMG_1120.jpeg'
 import outsideRemodel2 from '@/public/construction images/final.jpg'
 import headImage from '@/public/construction images/IMG_2031.jpeg'
+import Head from 'next/head'
 
 const projects: {
   title: string;
@@ -131,6 +132,30 @@ export default function Project(){
     }, [])
 
     return (
+        <>
+        <Head>
+        <title>Our Projects – Construct Concepts</title>
+        <meta
+          name="description"
+          content="View our portfolio of custom homes and construction projects that highlight our commitment to quality, innovation, and timeless design."
+        />
+        <link rel="canonical" href="https://constructconcepts.com/projects" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Our Projects – Construct Concepts" />
+        <meta
+          property="og:description"
+          content="Browse through our portfolio and see how we bring unique visions to life with precision and creativity."
+        />
+        <meta property="og:url" content="https://constructconcepts.com/projects" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Projects – Construct Concepts" />
+        <meta
+          name="twitter:description"
+          content="Browse through our portfolio and see how we bring unique visions to life with precision and creativity."
+        />
+      </Head>
         <div className='w-full'>
             {/* Hero Section */}
             <div ref={sectionRef} className='relative h-screen w-full'>
@@ -170,5 +195,6 @@ export default function Project(){
             </div>
 
         </div>
-    )
+        </>
+        )
 }

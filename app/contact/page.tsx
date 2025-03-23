@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import headImage from '@/public/construction images/IMG_4313.jpeg'
+import Head from 'next/head'
 
 
 export default function ContactPage(){
@@ -33,6 +34,30 @@ export default function ContactPage(){
 
     }, [])
     return(
+        <>
+        <Head>
+        <title>Contact Us – Construct Concepts</title>
+        <meta
+          name="description"
+          content="Get in touch with Construct Concepts to discuss your custom home project. We are here to guide you from concept to construction."
+        />
+        <link rel="canonical" href="https://constructconcepts.com/contact" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Contact Us – Construct Concepts" />
+        <meta
+          property="og:description"
+          content="Reach out to us today to start your custom home project and experience our dedication to quality and craftsmanship."
+        />
+        <meta property="og:url" content="https://constructconcepts.com/contact" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us – Construct Concepts" />
+        <meta
+          name="twitter:description"
+          content="Reach out to us today to start your custom home project and experience our dedication to quality and craftsmanship."
+        />
+      </Head>
         <div className="w-full">
             <div  ref={sectionRef} className="relative h-screen w-full">
                     <div className='absolute inset-0 bg-cover bg-center bg-no-repeat'
@@ -204,5 +229,6 @@ export default function ContactPage(){
     </div>
             
         </div>
+        </>
     )
 }
