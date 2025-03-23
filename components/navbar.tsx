@@ -81,9 +81,11 @@ export default function Navbar() {
 
           {/* Mobile Navigation Toggle */}
           {isScrolled ? (
+            <div className='md:hidden'>
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
               <Menu size={48} className='text-black' />
             </Button>
+            </div>
           ) : (
           <div className="md:hidden">
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">

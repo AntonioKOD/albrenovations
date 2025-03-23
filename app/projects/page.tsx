@@ -11,6 +11,7 @@ import remodelPic from '@/public/construction images/IMG_0234.jpeg'
 import remodelPic2 from '@/public/construction images/IMG_0249.jpeg'
 import outsideRemodel from '@/public/construction images/IMG_1120.jpeg'
 import outsideRemodel2 from '@/public/construction images/final.jpg'
+import headImage from '@/public/construction images/IMG_2173.jpg'
 
 const projects: {
   title: string;
@@ -135,7 +136,7 @@ export default function Project(){
             <div ref={sectionRef} className='relative h-screen w-full'>
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    backgroundImage: `url(${headImage.src})`,
                     backgroundPosition: "center"}}>
 
                     <div className='absolute inset-0 bg-black/40'></div>

@@ -11,6 +11,7 @@ import kitchenRemodeling from '@/public/construction images/kitchen.jpg'
 import fullHomeRemodeling from '@/public/construction images/IMG_2031.jpeg'
 import interiorDesign from '@/public/construction images/70078350037__D6892A99-3119-448C-9B1A-7F9883D801E0.jpeg'
 import structuralImprovements from '@/public/construction images/IMG_0336.jpeg'
+import headImage from '@/public/construction images/IMG_3032.jpeg'
 
 
 
@@ -84,7 +85,7 @@ export default function ServicesPage(){
             <div ref={sectionRef} className="relative h-screen w-full">
                 <div className='absolute inset-0 bg-cover bg-center bg-no-repeat'
                 style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    backgroundImage: `url(${headImage.src})`,
                     backgroundPosition: "center"
                 }}>
                     <div className='absolute inset-0 bg-black/40'></div>

@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import {useEffect, useRef} from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Button from '@/components/contact-button'
+import headImage from '@/public/construction images/IMG_4311.jpeg'
 
 const principles = [
     {
@@ -91,7 +92,7 @@ export default function About(){
             <div ref={sectionRef} className='relative h-screen w-full'>
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    backgroundImage: `url(${headImage.src})`,
                     backgroundPosition: "center"}}>
 
                     <div className='absolute inset-0 bg-black/40'></div>

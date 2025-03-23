@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import headImage from '@/public/construction images/IMG_4313.jpeg'
 
 
 export default function ContactPage(){
@@ -36,7 +37,7 @@ export default function ContactPage(){
             <div  ref={sectionRef} className="relative h-screen w-full">
                     <div className='absolute inset-0 bg-cover bg-center bg-no-repeat'
                     style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                        backgroundImage: `url(${headImage.src})`,
                         backgroundPosition: "center"
                         }}>
 
