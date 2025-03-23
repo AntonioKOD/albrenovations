@@ -4,7 +4,7 @@ import "./globals.css";
 import StyledComponentsRegistry from "@/registry";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import logo from '@/public/logo_construction.svg'
+
 
 
 const geistSans = Geist({

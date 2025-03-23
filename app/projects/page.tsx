@@ -11,7 +11,7 @@ import remodelPic from '@/public/construction images/IMG_0234.jpeg'
 import remodelPic2 from '@/public/construction images/IMG_0249.jpeg'
 import outsideRemodel from '@/public/construction images/IMG_1120.jpeg'
 import outsideRemodel2 from '@/public/construction images/final.jpg'
-import headImage from '@/public/construction images/IMG_2173.jpg'
+import headImage from '@/public/construction images/IMG_2031.jpeg'
 
 const projects: {
   title: string;
