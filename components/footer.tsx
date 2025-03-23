@@ -51,7 +51,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/services"
                   className="text-muted-foreground hover:text-accent transition-colors duration-300"
                 >
                   Services
@@ -59,20 +59,20 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#projects"
+                  href="/projects"
                   className="text-muted-foreground hover:text-accent transition-colors duration-300"
                 >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-accent transition-colors duration-300">
+                <Link href="/about" className="text-muted-foreground hover:text-accent transition-colors duration-300">
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/contact"
                   className="text-muted-foreground hover:text-accent transition-colors duration-300"
                 >
                   Contact

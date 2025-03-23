@@ -62,7 +62,7 @@ export default function HeroSection() {
               Expertly crafted remodels that enhance comfort, elevate style, and add lasting value to your space.
             </p>
             <div ref={buttonRef} className="flex flex-col sm:flex-row gap-4">
-              <Link href="/#contact">
+              <Link href="/contact">
                 <Button/>
               </Link>
             </div>

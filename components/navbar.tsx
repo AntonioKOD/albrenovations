@@ -80,11 +80,17 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Navigation Toggle */}
+          {isScrolled ? (
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+              <Menu size={48} className='text-black' />
+            </Button>
+          ) : (
           <div className="md:hidden">
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
               <Menu size={48} className='text-white' />
             </Button>
           </div>
+          )}
         </div>
       </div>
 
@@ -120,11 +126,13 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <div className="pt-2">
-              <Button className="w-full" size="sm">
-                Get Started
-              </Button>
-            </div>
+            <Link
+              href="/projects"
+              className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-primary/10"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects
+            </Link>
           </div>
         </div>
       )}

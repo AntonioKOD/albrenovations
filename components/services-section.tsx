@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Home, Paintbrush, Bath, CookingPotIcon as Kitchen, Sofa, Hammer } from "lucide-react"
+import { TextRoll } from "./motion-primitives/text-roll"
 
 interface ServiceProps {
   icon: React.ReactNode
@@ -138,10 +139,12 @@ export default function ServicesSection() {
     <section id="services" ref={sectionRef} className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold mb-4">
+            <div ref={titleRef}>
+          <TextRoll className="text-4xl md:text-5xl font-bold mb-4">
             Our Services
-            <div className="title-underline h-1 bg-primary w-24 mx-auto mt-4"></div>
-          </h2>
+          </TextRoll>
+          </div>
+          <div className="title-underline h-1 bg-primary w-24 mx-auto mt-4 mb-4"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We offer comprehensive remodeling services to transform your space into the home of your dreams.
           </p>
