@@ -8,74 +8,74 @@ export const metadata = {
 }
 
 export default function TestimonialsPage() {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "Homeowner",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      quote:
-        "Horizon Fix transformed our outdated home into a modern masterpiece. Their attention to detail and commitment to quality exceeded our expectations. The team was professional, communicative, and completed the project on time and within budget.",
-      project: "Home Renovation",
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "Business Owner",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      quote:
-        "Working with Horizon Fix on our office renovation was a seamless experience. They delivered on time and within budget, with exceptional craftsmanship. Their team understood our vision and brought it to life with innovative solutions and quality materials.",
-      project: "Office Renovation",
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "Property Developer",
-      image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      quote:
-        "As a developer, I've worked with many construction firms, but Horizon Fix stands out for their reliability, expertise, and innovative solutions. They've completed multiple projects for us, each one delivered with the highest standards of quality and professionalism.",
-      project: "Commercial Development",
-      rating: 5,
-    },
-    {
-      id: 4,
-      name: "David Thompson",
-      role: "Restaurant Owner",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      quote:
-        "The renovation of our restaurant by Horizon Fix was exceptional. They understood the unique requirements of a food service establishment and created a space that is both functional and aesthetically pleasing. Our customers love the new design!",
-      project: "Restaurant Renovation",
-      rating: 4,
-    },
-    {
-      id: 5,
-      name: "Jennifer Lee",
-      role: "Homeowner",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      quote:
-        "Horizon Fix built our dream home from the ground up. The attention to detail, quality of work, and customer service were all outstanding. They guided us through every step of the process and were always available to answer our questions.",
-      project: "Custom Home Construction",
-      rating: 5,
-    },
-    {
-      id: 6,
-      name: "Robert Wilson",
-      role: "Retail Store Manager",
-      image:
-        "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
-      quote:
-        "Our retail space needed a complete overhaul, and Horizon Fix delivered beyond our expectations. They minimized disruption to our business and created a modern, inviting space that has helped increase our foot traffic and sales.",
-      project: "Retail Space Renovation",
-      rating: 4,
-    },
-  ]
+    const testimonials = [
+        {
+          id: 1,
+          name: "Sarah Johnson",
+          role: "Homeowner",
+          image:
+            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+          quote:
+            "Construct Concepts reimagined our dated home, turning it into a sleek, modern haven. Their meticulous attention to detail and unwavering commitment to quality far surpassed our expectations. The team was professional, communicative, and delivered the project on schedule and within budget.",
+          project: "Home Renovation",
+          rating: 5,
+        },
+        {
+          id: 2,
+          name: "Michael Chen",
+          role: "Business Owner",
+          image:
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+          quote:
+            "Collaborating with Construct Concepts on our office remodel was a seamless journey. They completed the project on schedule and within budget while showcasing exceptional craftsmanship. The team truly grasped our vision and transformed it into reality with innovative designs and high-quality materials.",
+          project: "Office Renovation",
+          rating: 5,
+        },
+        {
+          id: 3,
+          name: "Emily Rodriguez",
+          role: "Property Developer",
+          image:
+            "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+          quote:
+            "In my experience as a property developer, Construct Concepts has distinguished themselves with unmatched reliability, expertise, and creative solutions. They have handled several projects for us, each executed with the utmost quality and professionalism.",
+          project: "Commercial Development",
+          rating: 5,
+        },
+        {
+          id: 4,
+          name: "David Thompson",
+          role: "Restaurant Owner",
+          image:
+            "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+          quote:
+            "Construct Concepts delivered an exceptional remodel for our restaurant. They fully understood the unique needs of a food service environment and crafted a space that is both functional and visually appealing. Our patrons are delighted with the fresh, inviting design!",
+          project: "Restaurant Renovation",
+          rating: 4,
+        },
+        {
+          id: 5,
+          name: "Jennifer Lee",
+          role: "Homeowner",
+          image:
+            "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+          quote:
+            "Construct Concepts turned our dream home into a reality from the ground up. Their impeccable attention to detail, superior craftsmanship, and exceptional customer service made the entire process enjoyable and stress-free. They were with us every step of the way.",
+          project: "Custom Home Construction",
+          rating: 5,
+        },
+        {
+          id: 6,
+          name: "Robert Wilson",
+          role: "Retail Store Manager",
+          image:
+            "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
+          quote:
+            "Our retail space was due for a complete transformation, and Construct Concepts exceeded our expectations. They ensured minimal disruption to our business while crafting a modern, welcoming environment that has noticeably boosted our foot traffic and sales.",
+          project: "Retail Space Renovation",
+          rating: 4,
+        },
+      ];
 
   // Function to render star ratings
   const renderStars = (rating: number) => {
