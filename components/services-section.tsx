@@ -130,8 +130,8 @@ export default function ServicesSection() {
     },
     {
       icon: <Hammer size={28} className="text-primary"/>,
-      title: "Structural Improvements",
-      description: "Expert structural modifications to improve flow, functionality, and value of your property.",
+      title: "Elite Masonry",
+      description: "Custom masonry work to enhance your home's exterior with timeless beauty and durability.",
     },
   ]
 

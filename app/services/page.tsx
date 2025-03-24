@@ -13,6 +13,7 @@ import interiorDesign from '@/public/construction images/70078350037__D6892A99-3
 import structuralImprovements from '@/public/construction images/IMG_0336.jpeg'
 import headImage from '@/public/construction images/IMG_3032.jpeg'
 import Head from 'next/head';
+import masonry from '@/public/construction images/masonry.jpg'
 
 
 
@@ -57,6 +58,11 @@ const services = [
       description: "Expert structural modifications to improve flow, functionality, and value of your property.",
       image: structuralImprovements
     },
+    {
+      title: "Elite Masonry",
+      description: "Custom masonry work to enhance your home's exterior with timeless beauty and durability.",
+      image: masonry,
+    }
   ]
 export default function ServicesPage(){
     const serviceRef = useRef(null);
