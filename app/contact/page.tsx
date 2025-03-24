@@ -1,7 +1,7 @@
 'use client'
 import gsap from 'gsap'
 import React from 'react'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
@@ -16,6 +16,60 @@ export default function ContactPage(){
     const paragraphRef = useRef(null)
     const formRef = useRef(null)
     const buttonRef = useRef(null)
+
+
+    const [formData, setFormData] = useState({
+       name: '',
+       email: '',
+       phone: '',
+       budget: '',
+       address: '',
+       message: '',
+    })
+
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >) => {
+        const {name, value} = e.target
+        setFormData((prev) => ({...prev, [name]: value}))
+    }
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault()
+
+ 
+
+      try{
+        const res =await fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            budget: formData.budget,
+            address: formData.address,
+            message: formData.message
+          })
+        })
+
+        if(res.ok){
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            budget: '',
+            address: '',
+            message: '',
+          })
+        }
+        
+      }catch(err){
+        console.error(err)
+      }
+
+    }
+  
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -101,7 +155,7 @@ export default function ContactPage(){
             <Mail className="text-primary mr-4 mt-1" />
             <div>
               <h4 className="font-semibold text-lg">Email</h4>
-              <p className="text-gray-600">info@company.com</p>
+              <p className="text-gray-600">info@constructconcepts.com</p>
             </div>
           </div>
 
@@ -137,7 +191,7 @@ export default function ContactPage(){
       <div className="w-full lg:w-2/3">
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Contact Us</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row gap-6 mb-6">
               <div className="w-full md:w-1/2">
                 <Label htmlFor="name" className="block mb-2 text-lg font-bold">
@@ -147,6 +201,8 @@ export default function ContactPage(){
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="John Doe"
                   className="border-b-[3px] border-b-primary p-1 w-full focus:outline-none bg-transparent transition-all text-black"
                 />
@@ -158,6 +214,8 @@ export default function ContactPage(){
                 <input
                   type="text"
                   id="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   name="phone"
                   placeholder="(123) 456-7890"
                   className="border-b-[3px] border-b-primary p-1 w-full focus:outline-none bg-transparent transition-all text-black"
@@ -172,6 +230,8 @@ export default function ContactPage(){
               <input
                 type="email"
                 id="email"
+                value={formData.email}
+                onChange={handleChange}
                 name="email"
                 placeholder="email@example.com"
                 className="border-b-[3px] border-b-primary p-1 w-full focus:outline-none bg-transparent transition-all text-black"
@@ -180,13 +240,15 @@ export default function ContactPage(){
 
             <div className="flex flex-col md:flex-row gap-6 mb-6">
               <div className="w-full md:w-1/2">
-                <Label htmlFor="location" className="block mb-2 text-lg font-bold">
+                <Label htmlFor="address" className="block mb-2 text-lg font-bold">
                   Location
                 </Label>
                 <input
                   type="text"
-                  id="location"
-                  name="location"
+                  id="address"
+                  value={formData.address}
+                  onChange={handleChange}
+                  name="address"
                   placeholder="Enter Your City"
                   className="border-b-[3px] border-b-primary p-1 w-full focus:outline-none bg-transparent transition-all"
                 />
@@ -198,6 +260,8 @@ export default function ContactPage(){
                 <input
                   type="number"
                   id="budget"
+                  value={formData.budget}
+                  onChange={handleChange}
                   name="budget"
                   placeholder="$"
                   className="border-b-[3px] border-b-primary p-1 w-full focus:outline-none bg-transparent transition-all"
@@ -212,6 +276,8 @@ export default function ContactPage(){
               <textarea
                 name="message"
                 id="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows={4}
                 placeholder="Type your message here..."
                 className="border-b-[3px] border-b-primary p-1 w-full focus:outline-none bg-transparent transition-all"

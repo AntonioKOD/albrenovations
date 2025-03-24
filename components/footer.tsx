@@ -106,7 +106,7 @@ export default function Footer() {
               <strong>Phone:</strong> (781) 228-3378
             </p>
             <p className="text-muted-foreground">
-              <strong>Email:</strong> info@remodelx.com
+              <strong>Email:</strong> info@constructconcepts.com
             </p>
           </div>
         </div>

@@ -17,6 +17,7 @@ const links = [
   { href: "/contact", label: "Contact" },
   { href: "/services", label: "Services" },
   { href: "/projects", label: "Projects" },
+  { href: "/testimonials", label: "Testimonials" },
 ]
 
 
@@ -134,6 +135,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
+            </Link>
+            <Link
+              href="/testimonials"
+              className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-primary/10"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Testimonials
             </Link>
           </div>
         </div>
